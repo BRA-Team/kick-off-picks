@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "image": "./images/test_img_1.png",
+        "title": "WC 2026"
+    },
+    {
+        "id": 2,
+        "image": "./images/test_img_2.jpg",
+        "title": "WC 2022"
+    },
+    {
+        "id": 3,
+        "image": "./images/test_img_3.jpg",
+        "title": "WC 2018"
+    }
+]
