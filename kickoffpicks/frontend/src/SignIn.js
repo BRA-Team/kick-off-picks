@@ -72,22 +72,37 @@ export default function SignIn() {
               borderRadius: '10px',
             }}
           >
-            <TextField
-              margin="normal"
-              required
-              fullWidth
-              id="email"
-              label="Email Address"
-              name="email"
-              autoComplete="email"
-              autoFocus
-              InputLabelProps={{
-                style: { color: 'white', textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' },
-              }}
-              InputProps={{
-                style: { color: 'white', borderColor: 'white' },
-              }}
-            />
+              <TextField
+                margin="normal"
+                required
+                fullWidth
+                id="email"
+                label="Email Address"
+                name="email"
+                autoComplete="email"
+                autoFocus
+                InputLabelProps={{
+                  style: { color: 'white', textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' },
+                }}
+                InputProps={{
+                  style: { color: 'white' }
+                }}
+                sx={{
+                  color: 'white',
+                  borderColor: 'white', // Set the static border color here
+                  '& .MuiOutlinedInput-notchedOutline': {
+                    borderColor: 'white', // Set the static border color for outlined style
+                  },
+                  '&:hover .MuiOutlinedInput-notchedOutline': {
+                    borderColor: 'white', // Set the static border color on hover for outlined style
+                  },
+                  '& .MuiOutlinedInput-root': {
+                    '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                      borderColor: 'white !important', // Set the static border color for focused state with !important
+                    },
+                  },
+                }}
+              />
 
             <TextField
               margin="normal"
